@@ -25,29 +25,29 @@ public class TriangleAndDiamondExercises {
     }
 
     public void isoscelesAsteriskTriangleGivenN(int n){
-        normalIsoscelesAsteriskTriangleGivenN(n);
+        isoscelesTriangle(n);
         horizontalLineOfAsteriskGivenN(2*n-1);
     }
 
     public void diamondAsteriskGivenN(int n ){
         isoscelesAsteriskTriangleGivenN(n);
-        invertedIsoscelesAsteriskTriangleGivenN(n);
+        invertedIsoscelesTriangle(n);
     }
 
     public void diamondAsteriskGivenNPlusName(int n ){
-        normalIsoscelesAsteriskTriangleGivenN(n);
+        isoscelesTriangle(n);
         System.out.println("YANINA");
-        invertedIsoscelesAsteriskTriangleGivenN(n);
+        invertedIsoscelesTriangle(n);
     }
 
-    private void invertedIsoscelesAsteriskTriangleGivenN(int n){
+    private void invertedIsoscelesTriangle(int n){
         int i;
         for (i=n-1; i>0;i--){
             triangleLine(n,i);
         }
     }
 
-    private void normalIsoscelesAsteriskTriangleGivenN(int n){
+    private void isoscelesTriangle(int n){
         int i;
         for (i=1; i<n; i++){
             triangleLine(n,i);

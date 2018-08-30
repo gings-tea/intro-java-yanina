@@ -1,14 +1,19 @@
 package com.twu.intro;
 
+import java.util.Scanner;
+
 public class Main {
 
     public static void main (String[] args){
 
-        int n = 5;
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter n: ");
+        int n = sc.nextInt();
 
         TriangleAndDiamondExercises triangleAndDiamondExercises = new TriangleAndDiamondExercises();
 
-        System.out.println("Easiest exercise ever\n");
+        System.out.println("\nEasiest exercise ever\n");
         triangleAndDiamondExercises.horizontalLineOfAsteriskGivenN(1);
 
         System.out.println("\nDraw a horizontal line\n");
