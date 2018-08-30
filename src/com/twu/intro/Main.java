@@ -4,19 +4,30 @@ public class Main {
 
     public static void main (String[] args){
 
-        TriangleExercises triangleExercises = new TriangleExercises();
+        int n = 5;
+
+        TriangleAndDiamondExercises triangleAndDiamondExercises = new TriangleAndDiamondExercises();
 
         System.out.println("Easiest exercise ever\n");
-        triangleExercises.horizontalLineOfAsteriskGivenN(1);
+        triangleAndDiamondExercises.horizontalLineOfAsteriskGivenN(1);
 
         System.out.println("\nDraw a horizontal line\n");
-        triangleExercises.horizontalLineOfAsteriskGivenN(8);
+        triangleAndDiamondExercises.horizontalLineOfAsteriskGivenN(n);
 
         System.out.println("\nDraw a vertical line\n");
-        triangleExercises.verticalLineOfAsteriskGivenN(3);
+        triangleAndDiamondExercises.verticalLineOfAsteriskGivenN(n);
 
         System.out.println("\nDraw a right triangle\n");
-        triangleExercises.triangleGivenN(3);
+        triangleAndDiamondExercises.triangleGivenN(n);
+
+        System.out.println("\nIsosceles Triangle\n");
+        triangleAndDiamondExercises.isoscelesAsteriskTriangleGivenN(n);
+
+        System.out.println("\nDiamond\n");
+        triangleAndDiamondExercises.diamondAsteriskGivenN(n);
+
+        System.out.println("\nDiamond with Name\n");
+        triangleAndDiamondExercises.diamondAsteriskGivenNPlusName(n);
 
     }
 
