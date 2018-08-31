@@ -43,18 +43,18 @@ public class TriangleAndDiamondExercises {
     private void invertedIsoscelesTriangle(int n){
         int i;
         for (i=n-1; i>0;i--){
-            triangleLine(n,i);
+            isoscelesTriangleLine(n,i);
         }
     }
 
     private void isoscelesTriangle(int n){
         int i;
         for (i=1; i<n; i++){
-            triangleLine(n,i);
+            isoscelesTriangleLine(n,i);
         }
     }
 
-    private void triangleLine(int n, int nAsterisk){
+    private void isoscelesTriangleLine(int n, int nAsterisk){
         printSpaces(n-nAsterisk);
         horizontalLineOfAsteriskGivenN(2*nAsterisk-1);
 
