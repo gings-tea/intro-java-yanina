@@ -26,6 +26,13 @@ public class PrimeFactorsTests {
 
     @Test
     public void primeFactorsSetShouldBeEmptySet() {
-        assertEquals(new HashSet<Integer>(), new PrimeFactors().primeFectorsSet(2));
+        assertEquals(new HashSet<Integer>(), new PrimeFactors().primeFactorsSet(1));
+    }
+
+    @Test
+    public void primeFactorsSetShouldHaveTwo() {
+        HashSet<Integer> list = new HashSet<Integer>();
+        list.add(2);
+        assertEquals(list, new PrimeFactors().primeFactorsSet(2));
     }
 }
