@@ -2,6 +2,8 @@ package com.twu.intro;
 
 import org.junit.Test;
 
+import java.util.HashSet;
+
 import static org.junit.Assert.assertEquals;
 
 public class PrimeFactorsTests {
@@ -20,5 +22,10 @@ public class PrimeFactorsTests {
     @Test
     public void lowerDivisorShouldBeThree() {
         assertEquals(3, new PrimeFactors().lowerDivisor(9));
+    }
+
+    @Test
+    public void primeFactorsSetShouldBeEmptySet() {
+        assertEquals(new HashSet<Integer>(), new PrimeFactors().primeFectorsSet(2));
     }
 }
