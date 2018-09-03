@@ -1,5 +1,6 @@
 package com.twu.intro;
 
+import java.util.HashSet;
 import java.util.Scanner;
 
 public class Main {
@@ -8,7 +9,7 @@ public class Main {
 
         Scanner sc = new Scanner(System.in);
 
-        System.out.print("Enter n: ");
+        System.out.print("Please enter n: ");
         int n = sc.nextInt();
 
         TriangleAndDiamondExercises triangleAndDiamondExercises = new TriangleAndDiamondExercises();
@@ -33,6 +34,14 @@ public class Main {
 
         System.out.println("\nDiamond with Name\n");
         triangleAndDiamondExercises.diamondAsteriskGivenNPlusName(n);
+
+        System.out.println("\nFizzBuzz Exercise\n");
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        fizzBuzz.printFizzBuzzNumbers(100);
+
+        System.out.println("\nPrime Factors Exercise\n");
+        PrimeFactors primeFactors = new PrimeFactors();
+        System.out.println(primeFactors.primeFactorsSet(n));
 
     }
 

@@ -9,9 +9,9 @@ import static org.junit.Assert.assertEquals;
 public class PrimeFactorsTests {
 
     @Test
-    public void lowerDivisorShouldBeZero() {
-        assertEquals(0, new PrimeFactors().lowerDivisor(2));
-        assertEquals(0, new PrimeFactors().lowerDivisor(3));
+    public void lowerDivisorShouldBeThePrime() {
+        assertEquals(2, new PrimeFactors().lowerDivisor(2));
+        assertEquals(3, new PrimeFactors().lowerDivisor(3));
     }
 
     @Test
@@ -34,5 +34,14 @@ public class PrimeFactorsTests {
         HashSet<Integer> list = new HashSet<Integer>();
         list.add(2);
         assertEquals(list, new PrimeFactors().primeFactorsSet(2));
+    }
+
+    @Test
+    public void primeFactorsSetShouldHaveTwoThreeFive() {
+        HashSet<Integer> list = new HashSet<Integer>();
+        list.add(2);
+        list.add(3);
+        list.add(5);
+        assertEquals(list, new PrimeFactors().primeFactorsSet(30));
     }
 }
