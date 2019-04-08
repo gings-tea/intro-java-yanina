@@ -3,7 +3,7 @@ name: default
 
 steps:
 - name: build
-  image: java-intro
+  image: java
   commands:
   - javac src/com/twu/intro/*.java
   when:
