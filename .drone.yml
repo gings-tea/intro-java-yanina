@@ -9,3 +9,8 @@ steps:
   when:
   event:
   - push
+- name: test
+  image: java
+  commands:
+  - java PrimeFactorsTests
+  detach: true
