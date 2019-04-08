@@ -14,5 +14,7 @@ steps:
   commands:
   - java PrimeFactorsTests
   when:
-    event: deployment
-    environment: staging
+    event:
+      - promote
+    target:
+      - test
