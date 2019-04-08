@@ -15,4 +15,4 @@ steps:
   - java PrimeFactorsTests
   when:
     event: deployment
-      environment: staging
+    environment: staging
