@@ -6,3 +6,6 @@ steps:
   image: java-intro
   commands:
   - javac src/com/twu/intro/*.java
+  when:
+  event:
+  - push
