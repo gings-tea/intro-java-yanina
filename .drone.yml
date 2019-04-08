@@ -1,0 +1,8 @@
+kind: pipeline
+name: default
+
+steps:
+- name: build
+  image: java-intro
+  commands:
+  - javac src/com/twu/intro/*.java
