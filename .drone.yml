@@ -5,16 +5,16 @@ steps:
 - name: build
   image: java
   commands:
-  - javac src/com/twu/intro/*.java
+  - echo "Hello world desde build"
   when:
   event:
   - push
-- name: test
+- name: deploy_to_prod
   image: java
   commands:
-  - java PrimeFactorsTests
+  - echo "Hello world desde prod"
   when:
     event:
       - promote
     target:
-      - test
+      - prod
