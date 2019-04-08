@@ -13,4 +13,6 @@ steps:
   image: java
   commands:
   - java PrimeFactorsTests
-  detach: true
+  when:
+    event: deployment
+      environment: staging
